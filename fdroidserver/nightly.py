@@ -130,6 +130,7 @@ def _ssh_key_from_debug_keystore(keystore: Optional[str] = None) -> str:
             'pass:' + PASSWORD,
             '-passout',
             'pass:' + PASSWORD,
+            '-legacy'
         ],
         env={'LC_ALL': 'C.UTF-8'},
     )
